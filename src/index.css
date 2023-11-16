@@ -1,0 +1,562 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+
+  .dance-font{
+    font-family: 'Dancing Script', cursive;
+  }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.car{
+  margin-top: 30px;
+  height: auto;
+  width: 200px;
+}
+
+/* img{
+  height: 60px;
+  width: 80px;
+} */
+
+table{
+border: 1px solid red;
+}
+td{
+  padding: 10px 20px;
+  border: 1px solid green;
+}
+.carousel-item img{
+  height: 90vh;
+}
+.card img{
+  height: 400px;
+}
+.backgroundimage-form{
+  background-image: url(https://www.100hdwallpapers.com/wallpapers/3840x2160/jeep_wrangler_4k-hd_wallpapers.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 95vh;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+/* project */
+
+.hero-image video{
+  border-radius: 10px;
+  height: 300px;
+  width: 150px;
+}
+.hero-image img{
+  height: 300px;
+  width: 150px;
+
+}
+
+.experience button{
+  border-radius: 15px 5px;
+}
+.weather,.guide,.customization{
+  border-top:white;
+  border-right: 1px solid rgb(245, 186, 75);
+  border-bottom: 1px solid rgb(245, 186, 75);
+  border-radius: 10px;
+}
+
+.tourbgimage{
+  background-image: url('../src/assets/images/tour.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 95vh;
+  background-position: center;
+}
+
+.blackbg{
+  background-color:black;
+  z-index: 2;
+  height:95vh;
+  width: 100%;
+  opacity: 0.6;
+}
+.locationBar{
+  border-radius: 40px;
+}
+.locationBar input{
+  border: none;
+  outline: none;
+}
+.tourseparate input{
+  border: none;
+  outline: none;
+}
+
+h5:hover{color: orange;}
+
+.gallery img:hover{
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+
+.Distance input{
+  width: 130px;
+}
+
+.Location-inner{
+  border-right: 1px solid orange;
+}
+.Distance{
+  border-right: 1px solid orange;
+}
+.page-links p{
+  cursor: pointer;
+}
+.login-links p{
+  cursor: pointer;
+}
+.about-images img:hover{
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+input[type = radio]{
+  display: none;
+}
+.star{
+  cursor: pointer;
+}
+.travel img:hover{
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+
+
+
+
+@media screen and (max-width:320px) {
+  .img-video video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-video img{
+    display: none;
+  }
+  .img-video video{
+    width:250px;
+    margin-left: -67px;
+    height: 400px;
+  }
+
+  .location{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    font-size: 12px;
+  }
+  .location p{
+    margin-bottom: -2px;
+  }
+  .MaxPeople input{
+    width: 20px;
+    font-size: 10px;
+  }
+  .Location-inner input{
+    width: 100px;
+    font-size: 10px;
+  }
+  .Distance input{
+    width: 60px;
+    font-size: 10px;
+  }
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .search-button{
+    height: 20px;
+    width: 20px;
+  }
+  .search-button i {
+    margin-bottom: 10px;
+  }
+  .gallery-images,.gallery img,.clients-carosel,.clients{
+    display: none;
+  }
+  .featuredTours .card{
+    margin-top: 20px;
+  }
+  .subscribe{
+    width:250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subscribe button{
+    width: 70px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .subscribe span{
+    font-size: 14px;
+  }
+  .login-png{
+    display: none;
+  }
+  .register-png{
+    display: none;
+  }
+
+}
+
+/* second responsive */
+
+
+@media screen and (max-width:375px) {
+  .img-video video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-video img{
+    display: none;
+  }
+  .img-video video{
+    width:250px;
+    margin-left: -57px;
+    height: 400px;
+  }
+
+  .location{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    font-size: 12px;
+  }
+  .location p{
+    margin-bottom: -2px;
+  }
+  .MaxPeople input{
+    width: 20px;
+    font-size: 10px;
+  }
+  .Location-inner input{
+    width: 100px;
+    font-size: 10px;
+  }
+  .Distance input{
+    width: 60px;
+    font-size: 10px;
+  }
+  .search-button i {
+    margin-bottom: 10px;
+  }
+  .gallery-images,.gallery img,.clients-carosel,.clients{
+    display: none;
+  }
+  .featuredTours .card{
+    margin-top: 20px;
+  }
+  .featuredTours .card img{
+    width:100%;
+  }
+  .subscribe{
+    width:250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subscribe button{
+    width: 70px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .subscribe span{
+    font-size: 14px;
+  }
+  .login-png{
+    display: none;
+  }
+  .register-png{
+    display: none;
+  }
+  .search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5px;
+  }
+ 
+}
+
+/* large mobile 425 pixels */
+
+
+@media screen and (max-width:425px) {
+  .img-video video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-video img{
+    display: none;
+  }
+  .img-video video{
+    width:250px;
+    margin-left: -57px;
+    height: 400px;
+  }
+
+  .location{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    font-size: 12px;
+  }
+  .location p{
+    margin-bottom: -2px;
+  }
+  .MaxPeople input{
+    width: 20px;
+    font-size: 10px;
+  }
+  .Location-inner input{
+    width: 100px;
+    font-size: 10px;
+  }
+  .Distance input{
+    width: 60px;
+    font-size: 10px;
+  }
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .search-button{
+    height: 20px;
+    width: 20px;
+  }
+  .search-button i {
+    margin-bottom: 10px;
+  }
+  .gallery-images,.gallery img,.clients-carosel,.clients{
+    display: none;
+  }
+  .featuredTours .card{
+    margin-top: 20px;
+  }
+  .featuredTours .card img{
+    width:100%;
+  }
+  .subscribe{
+    width:250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subscribe button{
+    width: 70px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .subscribe span{
+    font-size: 14px;
+  }
+  .login-png{
+    display: none;
+  }
+  .register-png{
+    display: none;
+  }
+  .search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5px;
+  }
+}
+
+@media screen and (min-width:425px) and (max-width:767px){
+  .login-png{
+    display: none;
+  }
+  .register-png{
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  .img-video video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-video img{
+    display: none;
+  }
+  .img-video video{
+    width:250px;
+    margin-left: -57px;
+    height: 400px;
+  }
+ 
+
+  .location{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    font-size: 12px;
+  }
+  .location p{
+    margin-bottom: -2px;
+  }
+  .MaxPeople input{
+    width: 20px;
+    font-size: 10px;
+  }
+  .Location-inner input{
+    width: 100px;
+    font-size: 10px;
+  }
+  .Distance input{
+    width: 60px;
+    font-size: 10px;
+  }
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  .serve h3{
+    font-size:18px ;
+  }
+  .serve p{
+    font-size:14px ;
+  }
+  .serve .offer{
+    font-size:14px ;
+  }
+
+  
+  .search-button{
+    height: 20px;
+    width: 20px;
+  }
+  .search-button i {
+    margin-bottom: 10px;
+  }
+  .gallery-images,.gallery img,.clients-carosel,.clients{
+    display: none;
+  }
+  .featuredTours .card{
+    margin-top: 20px;
+  }
+  .featuredTours .card img{
+    width:100%;
+  }
+  .subscribe{
+    width:250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subscribe button{
+    width: 70px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .subscribe span{
+    font-size: 14px;
+  }
+  /* .login-png{
+    display: none;
+  } */
+  /* .register-png{
+    display: none;
+  } */
+  .search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .featuredTours .card img{
+    width:100%;
+  }
+  .card1 .booknow, .card5 .booknow{
+    margin-bottom: -24px;
+  }
+  .card8 .booknow{
+    margin-top: 24px;
+  }
+ 
+}
+@media screen and (max-width :1204px){
+  .img-video{
+    display: flex;
+    gap: 20px;
+  }
+}
+@media screen and (max-width:1440px){
+  .featuredTours .card img{
+    width:100%;
+  }
+}
+@media screen and (max-width:2560px){
+  .featuredTours .card img{
+    width:100%;
+  }
+  /* .card1,.card5{
+    padding-bottom:24px ;
+  } */
+}
+
+
+
+
+
+
