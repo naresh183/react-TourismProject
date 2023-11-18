@@ -160,5 +160,79 @@ const tourData = [
       photo: tourImg03,
       featured: false,
     },
+    {
+      id: "05",
+      title: "Nusa Pendia Bali, Indonesia",
+      city: "Indonesia",
+      distance: 500,
+      address:
+        "West London Family Golf Centre, Ruislip Rd, Northolt UB5 6QZ, United Kingdom",
+      price: 99,
+      maxGroupSize: 8,
+      desc: "this is the description",
+      reviews: [
+        {
+          name: "jhon doe",
+          rating: 4.6,
+        },
+        {
+          name: "jhon doe",
+          rating: 5,
+        },
+      ],
+      avgRating: 4.5,
+      photo: tourImg05,
+      featured: false,
+    },
+    {
+      id: "06",
+      title: "Cherry Blossoms Spring",
+      city: "Japan",
+      distance: 500,
+      address:
+        "West London Family Golf Centre, Ruislip Rd, Northolt UB5 6QZ, United Kingdom",
+      price: 99,
+      maxGroupSize: 8,
+      desc: "this is the description",
+      reviews: [
+        {
+          name: "jhon doe",
+          rating: 4.6,
+        },
+      ],
+      avgRating: 4.5,
+      photo: tourImg06,
+      featured: false,
+    },
+    {
+      id: "07",
+      title: "Holmen Lofoten",
+      city: "France",
+      distance: 500,
+      address:
+        "West London Family Golf Centre, Ruislip Rd, Northolt UB5 6QZ, United Kingdom",
+      price: 99,
+      maxGroupSize: 8,
+      desc: "this is the description",
+      reviews: [],
+      avgRating: 4.5,
+      photo: tourImg07,
+      featured: false,
+    },
+    {
+      id: "08",
+      title: "Snowy Mountains, Thailand",
+      city: "Thailand",
+      distance: 500,
+      price: 99,
+      address:
+        "West London Family Golf Centre, Ruislip Rd, Northolt UB5 6QZ, United Kingdom",
+      maxGroupSize: 8,
+      desc: "this is the description",
+      reviews: [],
+      avgRating: 4.5,
+      photo: tourImg03,
+      featured: false,
+    }
   ];
   export default tourData;

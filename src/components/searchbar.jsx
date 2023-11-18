@@ -1,9 +1,9 @@
 import React,{useState} from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import allTours from './tourdata'
 
 function Searchbar(){
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const Data = allTours;
 
 const [searchQuery, setSearchQuery] = useState('');
@@ -34,7 +34,7 @@ const handleSearch = () => {
   setFilteredTours(filtered);
 };
 function booknow(selectedTour) {
-    navigate('/Mybookings', { state: { selectedTour } });
+    // navigate('/Mybookings', { state: { selectedTour } });
   }
 
     return(
@@ -50,7 +50,7 @@ function booknow(selectedTour) {
                         </div>
 
                         <div className="col-3 col-sm-3 col-md-3 col-lg-3 Distance">
-                                <p><span><i class="fa-solid fa-location-dot" style={{color:"orange"}}></i></span> Distance</p>
+                                <p><span><i class='fas fa-map-marked-alt' style={{color:"orange"}}></i></span> Distance</p>
                                 <input  type="number" placeholder="Distance k/m" />
                         </div>
 

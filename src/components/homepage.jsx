@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 import allTours from './tourdata'
 import Footer from "./footer";
@@ -8,11 +8,20 @@ import Searchbar from "./searchbar";
 import Gallery from "./gallery";
 
 function Home(){
-    const navigate = useNavigate()
-    const Data = allTours;
+    const cardsPerPage = [8, 4];
+    const [currentPage, setCurrentPage] = useState(1);
+    const navigate = useNavigate();
+    const pageSize = currentPage === 1 ? cardsPerPage[0] : cardsPerPage[1];
+    const startIndex = (currentPage - 1) * pageSize;
+    const endIndex = startIndex + pageSize;
+    const Data = allTours.slice(startIndex, endIndex);
 function booknow(selectedTour) {
     navigate('/Mybookings', { state: { selectedTour } });
   }
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+};
     return(
         <div> 
             <div className="container">
@@ -117,6 +126,20 @@ function booknow(selectedTour) {
           ))}
           </div>
 </div>
+
+            {/* Pagination */}
+            <div className="pagination justify-content-center mt-4">
+                {[...Array(Math.ceil(allTours.length / cardsPerPage[0]))].map((_, index) => (
+                    <button
+                        key={index}
+                        className={`btn btn-outline-secondary mx-1 ${currentPage === index + 1 ? 'active' : ''}`}
+                        onClick={() => handlePageChange(index + 1)}
+                    >
+                        {index + 1}
+                    </button>
+                ))}
+            </div>
+
           {/* experience */}
 
           <div className="container experience">

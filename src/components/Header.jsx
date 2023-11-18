@@ -1,4 +1,4 @@
-import Home from "./Home";
+import Home from "./homepage";
 import About from "./About";
 import Tourpage from "./tourpage";
 import TourloginPage from "./Tourloginpage";
